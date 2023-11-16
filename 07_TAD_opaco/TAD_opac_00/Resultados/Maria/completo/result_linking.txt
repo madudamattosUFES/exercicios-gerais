@@ -1,0 +1,7 @@
+/usr/bin/ld: Resultados/Maria/completo/main.o: in function `main':
+main.c:(.text+0x36): undefined reference to `Circulo_Acessa_Raio'
+/usr/bin/ld: main.c:(.text+0x99): undefined reference to `Circulo_Atribui_Centro'
+/usr/bin/ld: main.c:(.text+0xac): undefined reference to `Circulo_Atribui_Raio'
+/usr/bin/ld: main.c:(.text+0xd7): undefined reference to `Circulo_Interior'
+/usr/bin/ld: main.c:(.text+0x111): undefined reference to `Circulo_Apaga'
+collect2: error: ld returned 1 exit status

@@ -1,0 +1,49 @@
+==30591== Memcheck, a memory error detector
+==30591== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==30591== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==30591== Command: Resultados/Maria/main/prog Resultados/Maria/main/Casos/5
+==30591== Parent PID: 30590
+==30591== 
+==30591== Invalid read of size 4
+==30591==    at 0x1092B4: Circulo_Acessa_Raio (in /home/madudamattos/prog2/exercicios-gerais/07_TAD_opaco/TAD_opac_00/Resultados/Maria/main/prog)
+==30591==    by 0x109382: main (in /home/madudamattos/prog2/exercicios-gerais/07_TAD_opaco/TAD_opac_00/Resultados/Maria/main/prog)
+==30591==  Address 0x4b71048 is 0 bytes after a block of size 8 alloc'd
+==30591==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==30591==    by 0x109372: main (in /home/madudamattos/prog2/exercicios-gerais/07_TAD_opaco/TAD_opac_00/Resultados/Maria/main/prog)
+==30591== 
+==30591== Invalid write of size 4
+==30591==    at 0x1092F3: Circulo_Atribui_Raio (in /home/madudamattos/prog2/exercicios-gerais/07_TAD_opaco/TAD_opac_00/Resultados/Maria/main/prog)
+==30591==    by 0x1093F8: main (in /home/madudamattos/prog2/exercicios-gerais/07_TAD_opaco/TAD_opac_00/Resultados/Maria/main/prog)
+==30591==  Address 0x4b71048 is 0 bytes after a block of size 8 alloc'd
+==30591==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==30591==    by 0x109372: main (in /home/madudamattos/prog2/exercicios-gerais/07_TAD_opaco/TAD_opac_00/Resultados/Maria/main/prog)
+==30591== 
+==30591== Invalid read of size 4
+==30591==    at 0x109330: Circulo_Interior (in /home/madudamattos/prog2/exercicios-gerais/07_TAD_opaco/TAD_opac_00/Resultados/Maria/main/prog)
+==30591==    by 0x109423: main (in /home/madudamattos/prog2/exercicios-gerais/07_TAD_opaco/TAD_opac_00/Resultados/Maria/main/prog)
+==30591==  Address 0x4b71048 is 0 bytes after a block of size 8 alloc'd
+==30591==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==30591==    by 0x109372: main (in /home/madudamattos/prog2/exercicios-gerais/07_TAD_opaco/TAD_opac_00/Resultados/Maria/main/prog)
+==30591== 
+==30591== Invalid free() / delete / delete[] / realloc()
+==30591==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==30591==    by 0x10927F: Circulo_Apaga (in /home/madudamattos/prog2/exercicios-gerais/07_TAD_opaco/TAD_opac_00/Resultados/Maria/main/prog)
+==30591==    by 0x10945D: main (in /home/madudamattos/prog2/exercicios-gerais/07_TAD_opaco/TAD_opac_00/Resultados/Maria/main/prog)
+==30591==  Address 0x4b720d0 is 0 bytes inside a block of size 8 free'd
+==30591==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==30591==    by 0x1094D9: Pto_Apaga (in /home/madudamattos/prog2/exercicios-gerais/07_TAD_opaco/TAD_opac_00/Resultados/Maria/main/prog)
+==30591==    by 0x109445: main (in /home/madudamattos/prog2/exercicios-gerais/07_TAD_opaco/TAD_opac_00/Resultados/Maria/main/prog)
+==30591==  Block was alloc'd at
+==30591==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==30591==    by 0x109498: Pto_Cria (in /home/madudamattos/prog2/exercicios-gerais/07_TAD_opaco/TAD_opac_00/Resultados/Maria/main/prog)
+==30591==    by 0x1093CE: main (in /home/madudamattos/prog2/exercicios-gerais/07_TAD_opaco/TAD_opac_00/Resultados/Maria/main/prog)
+==30591== 
+==30591== 
+==30591== HEAP SUMMARY:
+==30591==     in use at exit: 0 bytes in 0 blocks
+==30591==   total heap usage: 5 allocs, 6 frees, 8,216 bytes allocated
+==30591== 
+==30591== All heap blocks were freed -- no leaks are possible
+==30591== 
+==30591== For lists of detected and suppressed errors, rerun with: -s
+==30591== ERROR SUMMARY: 4 errors from 4 contexts (suppressed: 0 from 0)
